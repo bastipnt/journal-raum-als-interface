@@ -1,0 +1,57 @@
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import 'variables';
+@import 'mixins';
+
+body,
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-size: calc(14px + 0.2vw);
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  overflow-x: hidden;
+  @include minHeight;
+}
+
+body {
+  background-color: $dark;
+  color: $text;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+  @include height;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 1rem 0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+  margin: 2rem 0;
+  font-size: 1.75rem;
+}
+
+h2 {
+  font-size: 1.35rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+a {
+  font-family: inherit;
+}
+
+p {
+  margin: 1rem 0;
+  font-family: inherit;
+  line-height: 1.5;
+}

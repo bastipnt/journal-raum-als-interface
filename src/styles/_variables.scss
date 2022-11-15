@@ -1,0 +1,23 @@
+// Color definitions
+$dark: rgba(34,	34,	34, 1);
+$light: rgba(235, 235, 216, 1);
+
+// Color usement
+$text: $light;
+$page: $dark;
+
+// Sizes
+$page-padding: 3rem;
+$page-width: 50rem;
+
+
+$page-width-small: 40rem;
+$page-width-wide: 85rem;
+
+$sides-desktop: 7rem;
+$sides-mobile: 2rem;
+
+$max-width: $page-width;
+$desktop-breakpoint: 55rem;
+
+

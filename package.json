@@ -16,6 +16,10 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@fontsource/josefin-sans": "^4.5.11",
+    "@fontsource/montserrat": "^4.5.13",
+    "@types/react-helmet": "^6.1.5",
+    "classnames": "^2.3.2",
     "gatsby": "^4.24.7",
     "gatsby-plugin-image": "^2.24.0",
     "gatsby-plugin-manifest": "^4.24.0",

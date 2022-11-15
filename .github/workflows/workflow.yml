@@ -1,0 +1,27 @@
+name: Update journal
+
+on: [push, repository_dispatch]
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Set Node.js
+        uses: actions/setup-node@master
+        with:
+          node-version: 18.x
+
+      - name: Install dependencies
+        run: npm install --prod
+
+      - name: Build
+        run: npm run build
+        env:
+          GATSBY_ENV: "prod"
+
+      - name: Deploy
+        run: docker-compose run deploy
+        env:
+          DEPLOY_KEY: ${{ secrets.deploy_key }}

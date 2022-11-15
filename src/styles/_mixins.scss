@@ -1,0 +1,51 @@
+@import '../styles/variables';
+
+@mixin minHeight {
+  min-height: 100vh;
+
+  @supports (-webkit-touch-callout: none) {
+    min-height: -webkit-fill-available;
+  }
+}
+
+@mixin maxHeight {
+  max-height: 100vh;
+
+  @supports (-webkit-touch-callout: none) {
+    max-height: -webkit-fill-available;
+  }
+}
+
+@mixin height {
+  height: 100vh;
+
+  @supports (-webkit-touch-callout: none) {
+    height: -webkit-fill-available;
+  }
+}
+
+@mixin maxHeightMinus($amount) {
+  max-height: calc(100vh - #{$amount});
+
+  @supports (-webkit-touch-callout: none) {
+    max-height: -webkit-fill-available;
+    padding-bottom: $amount;
+  }
+}
+
+@mixin heightMinus($amount) {
+  height: calc(100vh - #{$amount});
+
+  @supports (-webkit-touch-callout: none) {
+    height: -webkit-fill-available;
+    padding-bottom: $amount;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop-breakpoint) {
+    @supports not (-webkit-touch-callout: none) {
+      @content;
+    }
+  }
+}
