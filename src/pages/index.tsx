@@ -40,6 +40,6 @@ export const pageQuery = graphql`
   }
 `;
 
-export const Head: HeadFC = () => <title>Home Page</title>;
+export const Head: HeadFC = () => <title>Journal - Raum als Interface</title>;
 
 export default Index;
