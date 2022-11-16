@@ -37,13 +37,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: $text-muted;
 
   .footer-container {
     width: 100%;
     max-width: $page-width;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
   }
 }

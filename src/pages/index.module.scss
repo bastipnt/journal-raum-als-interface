@@ -1,3 +1,9 @@
+@import '../styles/variables';
+
 .post-title {
   margin-bottom: 0;
+}
+
+.post-data {
+  color: $text-muted;
 }

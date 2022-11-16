@@ -1,9 +1,11 @@
 // Color definitions
 $dark: rgba(34,	34,	34, 1);
 $light: rgba(235, 235, 216, 1);
+$light-muted: rgba(235, 235, 216, 0.5);
 
 // Color usement
 $text: $light;
+$text-muted: $light-muted;
 $page: $dark;
 
 // Sizes

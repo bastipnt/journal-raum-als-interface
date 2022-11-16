@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import { Link, useStaticQuery, graphql } from "gatsby";
 
 import classNames from "classnames/bind";
-import * as styles from "./layout.module.scss";
+import * as styles from "./page-layout.module.scss";
 
 const cx = classNames.bind(styles);
 
@@ -16,7 +16,7 @@ const Layout: React.FC<Props> = ({ children }) => {
     <>
       <Helmet
         htmlAttributes={{
-          lang: "en",
+          lang: "de",
         }}
       >
         <meta
@@ -27,7 +27,7 @@ const Layout: React.FC<Props> = ({ children }) => {
       <header className={cx("header")}>
         <div className={cx("headerContainer")}>
           <h1 className={cx('pageTitle')}>Raum als Interface</h1>
-          <b>Sebastian Paintner</b>
+          <b className={cx('muted')}>Sebastian Paintner</b>
         </div>
       </header>
 

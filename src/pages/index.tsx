@@ -17,7 +17,7 @@ const Index: React.FC<Props> = ({ data: { allMarkdownRemark } }) => (
       <div>
         <div>
           <h1 className={cx("postTitle")}>{frontmatter.title}</h1>
-          <small>{frontmatter.date}</small>
+          <small className={cx("postData")}>{frontmatter.date} - {frontmatter.location}</small>
           <div dangerouslySetInnerHTML={{ __html: html }} />
         </div>
       </div>
@@ -31,6 +31,7 @@ export const pageQuery = graphql`
       nodes {
         frontmatter {
           date(formatString: "MMMM DD, YYYY")
+          location
           slug
           title
         }
