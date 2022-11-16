@@ -1,9 +1,15 @@
 @import '../styles/variables';
 
-.post-title {
-  margin-bottom: 0;
-}
+.post {
+  &:not(:first-child) {
+    margin: 7rem 0;
+  }
 
-.post-data {
-  color: $text-muted;
+  .post-title {
+    margin-bottom: 0;
+  }
+
+  .post-data {
+    color: $text-muted;
+  }
 }

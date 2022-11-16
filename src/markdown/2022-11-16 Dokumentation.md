@@ -29,24 +29,24 @@ Photographischen Dokumentation:
 - Anstelle von Kamera auf Stativ 
 	-> Panorama entlang der Empore mit dem Handy
 
-==Zeitraum==: Donnerstag, der 03.11.22 -> Dienstag, den 08.11.22.
+**Zeitraum**: Donnerstag, der 03.11.22 -> Dienstag, den 08.11.22.
 
-==Aufnahme Intervall==: mehrmals am Tag und wenn sich Situationen deutlich geändert haben
+**Aufnahme Intervall**: mehrmals am Tag und wenn sich Situationen deutlich geändert haben
 
 Zeichnerische Dokumentation: Eintragen der Aktionsräume in den Grundriss (Illustrator), mehrmals am Tag und wenn sich Situationen deutlich geändert haben.
 
-![[photo_2022-11-16 16.09.22.jpeg]]
+![Studio](./images/studio.jpeg)
 
 ### Auswertung/Deutung:
 
 Um die zeitliche Gleichzeitigkeit zu simulieren, alle Dokumentationen als übereinander gelagerte Layer.
 Um die Veränderung der Aktionsräume über die Beobachtungszeit in einem Bild darzustellen, werden die Panorama Aufnahmen übereinander gelegt.
 
-![[photo_2022-11-16 16.05.27.jpeg]]
+![Studio](./images/wimmelbild.jpeg)
 
 Das gleiche haben wir mit unseren Skizzen gemacht
 
-![[photo_2022-11-16 16.05.31.jpeg]]
+![Studio](./images/skizze.jpeg)
 
 Vergleich von Skizzen und Fotos
 - Im linke Teil ändert sich die Nutzung aber nicht die physische Raumsituation

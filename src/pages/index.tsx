@@ -14,10 +14,12 @@ type Props = {
 const Index: React.FC<Props> = ({ data: { allMarkdownRemark } }) => (
   <>
     {allMarkdownRemark.nodes.map(({ frontmatter, html }: any) => (
-      <div>
+      <div className={cx("post")}>
         <div>
           <h1 className={cx("postTitle")}>{frontmatter.title}</h1>
-          <small className={cx("postData")}>{frontmatter.date} - {frontmatter.location}</small>
+          <small className={cx("postData")}>
+            {frontmatter.date} - {frontmatter.location}
+          </small>
           <div dangerouslySetInnerHTML={{ __html: html }} />
         </div>
       </div>
@@ -27,7 +29,7 @@ const Index: React.FC<Props> = ({ data: { allMarkdownRemark } }) => (
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: { fields: frontmatter___date }) {
+    allMarkdownRemark(sort: { frontmatter: { date: ASC } }) {
       nodes {
         frontmatter {
           date(formatString: "MMMM DD, YYYY")
