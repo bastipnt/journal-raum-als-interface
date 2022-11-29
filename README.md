@@ -1,62 +1,46 @@
----
-created: 2022-11-25T16:29:37+01:00
-updated: 2022-11-25T16:29:37+01:00
----
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal TypeScript starter
-</h1>
+# Welcome to the journal for our study class "Raum als Interface"
+
+## How to setup
+1. Clone the repo to your computer
+```sh
+cd <folder-to-install>
+git clone git@github.com:lItc0de/journal-raum-als-interface.git
+```
+2. Install npm on your system
+For mac:
+```sh
+brew install nvm
+nvm install --latest-lts
+```
+
+3. Install dependencies
+```sh
+npm install
+```
+
+4. Run the website locally
+```sh
+npm start
+```
+Then navigate to http://localhost:8000
+
+## How to edit the journal notes
+Navigate to the markdown folder and edit the files with your favorite editior.
+New files wil be automatically added to the page.
+It uses the order of the date in the file header section.
+
+## How to deploy
+First commit all your changes and push them to main
+```sh
+git add .
+git commit -m "<your-commit-message>"
+git push
+```
+
+Then deploy the new commits
+```sh
+npm run deploy
+```
 
 
-TEST, Messing with Basti's Stuff
-
-
-## 🚀 Quick start
-
-1.  **Create a Gatsby site.**
-
-    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
-
-    ```shell
-    # create a new Gatsby site using the minimal TypeScript starter
-    npm init gatsby
-    ```
-
-2.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
-
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
-
-3.  **Open the code and start customizing!**
-
-    Your site is now running at http://localhost:8000!
-
-    Edit `src/pages/index.tsx` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
+This project is done by Basti, Milli and Aron
