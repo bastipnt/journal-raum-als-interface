@@ -14,7 +14,7 @@ type Props = {
 const Index: React.FC<Props> = ({ data: { allMarkdownRemark } }) => (
   <>
     {allMarkdownRemark.nodes.map(({ frontmatter, html }: any) => (
-      <div className={cx("post")}>
+      <div className={cx("post")} key={frontmatter.slug}>
         <div>
           <h1 className={cx("postTitle")}>{frontmatter.title}</h1>
           <small className={cx("postData")}>

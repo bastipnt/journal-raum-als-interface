@@ -1,5 +1,5 @@
 ---
-slug: "2022-11-16"
+slug: "2022-11-16-dokumentation"
 date: "2022-11-16"
 title: "Dokumentation"
 location: "DC Studio"
@@ -12,15 +12,15 @@ updated: 2022-11-25T16:29:12+01:00
 Wie wird das Studio genutzt und welchen Raum nehmen die dort durchgeführten Aktionen ein. (Aktionsraum)
 Können diese parallel passieren, wie bedingen diese sich gegenseitig?
 
-Definition Aktionsraum: 
+Definition Aktionsraum:
 Ein Bereich in unserem Studio, der für eine bestimmte Zeit für eine bestimmte Aktivität genutzt wird.
 
 
- 
+
 ### Versuchsaufbau:
 
 Dokumentation des Studios und der durchgeführten Aktionen:
-- _Photographisch_: Stativ auf Empore, Kamera, Intervall von 2h 
+- _Photographisch_: Stativ auf Empore, Kamera, Intervall von 2h
 - *Zeichnerisch*: Einzeichnen in Grundrisse
 
 
@@ -28,7 +28,7 @@ Dokumentation des Studios und der durchgeführten Aktionen:
 
 Photographischen Dokumentation:
 - Studio ist zu groß um mit einem Bild abgebildet zu werden
-- Anstelle von Kamera auf Stativ 
+- Anstelle von Kamera auf Stativ
 	-> Panorama entlang der Empore mit dem Handy
 
 **Zeitraum**: Donnerstag, der 03.11.22 -> Dienstag, den 08.11.22.
