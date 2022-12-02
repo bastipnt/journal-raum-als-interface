@@ -1,7 +1,8 @@
 @import '../styles/variables';
+@import '../styles/mixins';
 
 .header {
-  padding: 1rem $page-padding;
+  padding: 1rem $page-padding-mobile;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,6 +13,10 @@
   box-sizing: border-box;
   backdrop-filter: blur(10px);
   z-index: $fixed-elements-z-index;
+
+  @include desktop {
+    padding: 1rem $page-padding;
+  }
 
   .header-container {
     width: 100%;
@@ -30,10 +35,14 @@
 }
 
 .main {
-  padding: $page-padding-top $page-padding 0;
+  padding: $page-padding-top $page-padding-mobile 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include desktop {
+    padding: $page-padding-top $page-padding 0;
+  }
 
   .main-container {
     width: 100%;
@@ -43,11 +52,15 @@
 
 
 .footer {
-  padding: $padding-small $page-padding $page-padding-bottom;
+  padding: $padding-small $page-padding-mobile $page-padding-bottom;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: $text-muted;
+
+  @include desktop {
+    padding: $padding-small $page-padding $page-padding-bottom;
+  }
 
   .footer-container {
     width: 100%;
