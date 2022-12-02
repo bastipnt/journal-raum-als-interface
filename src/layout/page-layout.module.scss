@@ -1,10 +1,17 @@
 @import '../styles/variables';
 
 .header {
-  padding: 0 $page-padding;
+  padding: 1rem $page-padding;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  backdrop-filter: blur(10px);
+  z-index: $fixed-elements-z-index;
 
   .header-container {
     width: 100%;
@@ -16,14 +23,14 @@
     flex-wrap: wrap;
 
     .page-title {
-      font-size: 2.5rem;
-      margin-bottom: 0;
+      font-size: 2.2rem;
+      margin: 0;
     }
   }
 }
 
 .main {
-  padding: 0 $page-padding $page-padding;
+  padding: $page-padding-top $page-padding 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,7 +42,7 @@
 
 
 .footer {
-  padding: $padding-small $page-padding;
+  padding: $padding-small $page-padding $page-padding-bottom;
   display: flex;
   flex-direction: column;
   align-items: center;

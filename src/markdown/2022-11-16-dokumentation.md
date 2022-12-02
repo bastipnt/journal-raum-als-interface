@@ -3,6 +3,7 @@ slug: "2022-11-16-dokumentation"
 date: "2022-11-16"
 title: "Dokumentation"
 location: "DC Studio"
+tags: "project1, studio, documentation"
 created: 2022-11-25T16:29:12+01:00
 updated: 2022-11-25T16:29:12+01:00
 ---

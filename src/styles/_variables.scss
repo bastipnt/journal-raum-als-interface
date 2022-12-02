@@ -1,7 +1,8 @@
 // Color definitions
-$dark: rgba(34,	34,	34, 1);
+$dark: rgba(34, 34, 34, 1);
 $light: rgba(235, 235, 216, 1);
-$light-muted: rgba(235, 235, 216, 0.5);
+$light-muted: rgba(188,188,172, 1);
+$primary: rgba(216, 216, 235, 1);
 
 // Color usement
 $text: $light;
@@ -9,10 +10,11 @@ $text-muted: $light-muted;
 $page: $dark;
 
 // Sizes
+$page-padding-top: 5rem;
+$page-padding-bottom: 5rem;
 $page-padding: 3rem;
 $padding-small: 0.5rem;
 $page-width: 50rem;
-
 
 $page-width-small: 40rem;
 $page-width-wide: 85rem;
@@ -23,4 +25,10 @@ $sides-mobile: 2rem;
 $max-width: $page-width;
 $desktop-breakpoint: 55rem;
 
+$sidebar-width: 12rem;
 
+// Radiuses
+$border-radius: 3px;
+
+// Z-Indexes
+$fixed-elements-z-index: 999;

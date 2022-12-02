@@ -1,8 +1,12 @@
 @import '../styles/variables';
 
 .post {
-  &:not(:first-child) {
+  &:not(:first-of-type) {
     margin: 7rem 0;
+  }
+
+  &:last-child {
+    margin: 0;
   }
 
   .post-title {
