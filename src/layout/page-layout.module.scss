@@ -12,6 +12,7 @@
   width: 100%;
   box-sizing: border-box;
   backdrop-filter: blur(10px);
+  background-color: rgba($dark, 0.7);
   z-index: $fixed-elements-z-index;
 
   @include desktop {
