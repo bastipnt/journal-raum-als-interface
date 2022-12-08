@@ -5,7 +5,7 @@ title: "Dokumentation"
 location: "DC Studio"
 tags: "project1, studio, documentation"
 created: 2022-11-25T16:29:12+01:00
-updated: 2022-11-25T16:29:12+01:00
+updated: 2022-12-07T17:10:13+01:00
 ---
 
 ### Problemstellung:
