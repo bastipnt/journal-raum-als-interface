@@ -36,13 +36,13 @@
 }
 
 .main {
-  padding: $page-padding-top $page-padding-mobile 0;
+  padding: $page-padding-top $page-padding-mobile $page-padding-mobile;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   @include desktop {
-    padding: $page-padding-top $page-padding 0;
+    padding: $page-padding-top $page-padding $page-padding;
   }
 
   .main-container {
