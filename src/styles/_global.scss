@@ -4,18 +4,37 @@
 
 body,
 html {
-  font-family: 'Montserrat', sans-serif;
-  font-size: calc(14px + 0.2vw);
   margin: 0;
   padding: 0;
   max-width: 100vw;
   overflow-x: hidden;
   @include minHeight;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: calc(14px + 0.2vw);
+  font-weight: $font-weight-fallback;
+
+  @supports (font-variation-settings: normal) {
+    font-family: 'MontserratVariable';
+    font-variation-settings: 'wght' $font-weight;
+  }
 }
 
 body {
-  background-color: $dark;
+  background-color: $primary;
   color: $text;
+
+  // background: rgb(128,99,200);
+  // background: radial-gradient(circle, rgba(128,99,200,1) 0%, rgba(126,132,191,1) 100%);
+
+  background: rgb(218,65,103);
+  background: radial-gradient(circle, rgba(218,65,103,1) 0%, rgba(155,162,255,1) 100%);
+  background-attachment: fixed;
+
+  ::selection {
+    color: $light;
+    background: $primary;
+  }
 }
 
 .no-scroll {
@@ -31,11 +50,20 @@ h5,
 h6 {
   margin: 1rem 0;
   font-family: 'Josefin Sans', sans-serif;
+
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+
+  @supports (font-variation-settings: normal) {
+    font-family: 'Josefin SansVariable';
+    font-variation-settings: 'wght' 600;
+  }
 }
 
 h1 {
   margin: 2rem 0;
   font-size: 1.75rem;
+  color: $heading;
 }
 
 h2 {
@@ -57,7 +85,12 @@ p {
   line-height: 1.5;
 }
 
-
 .muted {
   color: $text-muted;
+}
+
+.gatsby-resp-image-wrapper {
+  margin: 2rem auto;
+  border-radius: $border-radius;
+  overflow: hidden;
 }

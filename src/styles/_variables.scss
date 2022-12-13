@@ -1,19 +1,35 @@
 // Color definitions
-$dark: rgba(34, 34, 34, 1);
-$light: rgba(235, 235, 216, 1);
-$light-muted: rgba(188,188,172, 1);
-$primary: rgba(216, 216, 235, 1);
+$dark: rgb(33, 26, 29);
+$dark-1: rgba(255, 255, 255, 0.3);
+
+$light: rgba(255, 255, 255, 1);
+$light-muted: rgba(255, 255, 255, 0.5);
+
+// $primary: rgba(218, 65, 103, 1);
+$primary: rgba(255, 40, 130, 1);
 
 // Color usement
-$text: $light;
-$text-muted: $light-muted;
+$heading: $dark;
+$text: $dark;
+$text-muted: $dark;
 $page: $dark;
+$post: $dark-1;
+
+// Fonts
+$font-weight: 400;
+$font-weight-fallback: 400;
 
 // Sizes
-$page-padding-top: 5rem;
+$page-padding-top: 0;
 $page-padding-bottom: 5rem;
+
 $page-padding: 3rem;
 $page-padding-mobile: 1rem;
+
+$content-padding: $page-padding;
+$content-padding-mobile: 0;
+
+$post-padding: 1rem;
 
 $padding-small: 0.5rem;
 $page-width: 50rem;
@@ -31,6 +47,7 @@ $sidebar-width: 12rem;
 
 // Radiuses
 $border-radius: 3px;
+$border-radius-mobile: 0;
 
 // Z-Indexes
 $fixed-elements-z-index: 999;

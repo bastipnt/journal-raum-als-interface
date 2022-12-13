@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 import Sidebar from './sidebar';
+import BackgroundImage from './background-image';
 
 import classNames from 'classnames/bind';
 import * as styles from './page-layout.module.scss';
@@ -28,13 +29,9 @@ const Layout: React.FC<Props> = ({ children, pageContext }) => {
           content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
         />
       </Helmet>
-      <header className={cx('header')}>
-        <div className={cx('headerContainer')}>
-          <h1 className={cx('pageTitle')}>Raum als Interface</h1>
-        </div>
-      </header>
-
       <Sidebar pageContext={pageContext} />
+
+      <BackgroundImage />
 
       <main className={cx('main')}>
         <div className={cx('mainContainer')}>{children}</div>

@@ -1,19 +1,49 @@
 @import '../styles/variables';
+@import '../styles/mixins';
+
+.page-title {
+  padding: 0 $page-padding-mobile;
+
+  @include desktop {
+    padding: 0;
+  }
+}
 
 .post {
+  background-color: $post;
+  border-radius: $border-radius-mobile;
+  backdrop-filter: blur(10px);
+
+  @include desktop {
+    border-radius: $border-radius;
+  }
+
   &:not(:first-of-type) {
-    margin: 7rem 0;
+    margin: $page-padding-mobile 0;
+
+    @include desktop {
+      margin: $page-padding 0;
+    }
   }
 
   &:last-child {
     margin: 0;
   }
 
-  .post-title {
-    margin-bottom: 0;
+  .title-container {
+    border-bottom: 0.5px solid $text-muted;
+    padding: $post-padding;
+
+    .post-title {
+      margin: 0;
+    }
+
+    .post-data {
+      color: $text-muted;
+    }
   }
 
-  .post-data {
-    color: $text-muted;
+  .post-container {
+    padding: $post-padding;
   }
 }
