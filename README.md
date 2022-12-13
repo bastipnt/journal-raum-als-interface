@@ -30,17 +30,15 @@ New files wil be automatically added to the page.
 It uses the order of the date in the file header section.
 
 ## How to deploy
-First commit all your changes and push them to main
+Simply commit all your changes and push them to main
+
 ```sh
 git add .
 git commit -m "<your-commit-message>"
 git push
 ```
 
-Then deploy the new commits
-```sh
-npm run deploy
-```
+The website will then automatically build and deploy
 
 
 This project is done by Basti, Milli and Aron
