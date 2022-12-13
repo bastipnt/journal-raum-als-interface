@@ -43,7 +43,8 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: build-artifact
+        run: ls
 
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
+      # - name: Deploy to GitHub Pages
+      #   id: deployment
+      #   uses: actions/deploy-pages@v1
