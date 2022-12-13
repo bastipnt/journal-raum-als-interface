@@ -44,8 +44,6 @@ jobs:
           name: build-artifact
           path: public
 
-      - run: ls -R
-
-      # - name: Deploy to GitHub Pages
-      #   id: deployment
-      #   uses: actions/deploy-pages@v1
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
