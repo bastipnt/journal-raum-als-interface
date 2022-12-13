@@ -1,27 +1,41 @@
 name: Update journal
 
-on: [push, repository_dispatch]
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
-  update:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [17.x, 18.x]
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm run build
+      - run: npm run deploy
+
+  deploy:
+    needs: build
+
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-
-      - name: Set Node.js
-        uses: actions/setup-node@master
-        with:
-          node-version: 18.x
-
-      - name: Install dependencies
-        run: npm install --prod
-
-      - name: Build
-        run: npm run build
-        env:
-          GATSBY_ENV: "prod"
-
-      - name: Deploy
-        run: docker-compose run deploy
-        env:
-          DEPLOY_KEY: ${{ secrets.deploy_key }}
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
