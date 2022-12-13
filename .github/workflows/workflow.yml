@@ -23,8 +23,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: build-artifact
-          path: |
-            public
+          path: public
 
   deploy:
     needs: build
@@ -43,8 +42,9 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: build-artifact
+          path: public
 
-      - run: ls
+      - run: ls -R
 
       # - name: Deploy to GitHub Pages
       #   id: deployment
