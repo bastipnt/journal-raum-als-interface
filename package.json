@@ -13,8 +13,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit",
-    "deploy": "gatsby build && gh-pages -d public"
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@fontsource/josefin-sans": "^4.5.11",
