@@ -18,7 +18,7 @@ nvm install --latest-lts
 npm install
 ```
 
-4. Run the website locally
+4. Run the website locally -> try out
 ```sh
 npm start
 ```
