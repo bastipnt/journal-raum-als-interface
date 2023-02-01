@@ -33,17 +33,37 @@
   .title-container {
     border-bottom: 0.5px solid $text-muted;
     padding: $post-padding;
+    gap: $post-padding;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
-    .post-title {
-      margin: 0;
+    @include desktop {
+      grid-template-columns: 1fr 3fr 6fr;
     }
 
-    .post-data {
+    .date {
       color: $text-muted;
+
+      @include desktop {
+        text-align: center;
+      }
+    }
+  }
+
+  .content-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $post-padding;
+    padding: $post-padding;
+
+    @include desktop {
+      grid-template-columns: 2fr 3fr;
     }
   }
 
   .post-container {
-    padding: $post-padding;
+    > *:first-child {
+      margin-top: 0;
+    }
   }
 }

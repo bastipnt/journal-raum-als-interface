@@ -38,7 +38,6 @@
   padding: $page-padding-top $content-padding-mobile $page-padding-mobile;
   display: flex;
   flex-direction: column;
-  align-items: center;
 
   @include desktop {
     padding: $page-padding-top $page-padding $page-padding;
@@ -46,7 +45,6 @@
 
   .main-container {
     width: 100%;
-    max-width: $page-width;
   }
 }
 

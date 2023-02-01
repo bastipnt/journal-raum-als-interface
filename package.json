@@ -18,12 +18,10 @@
   "dependencies": {
     "@fontsource/josefin-sans": "^4.5.11",
     "@fontsource/montserrat": "^4.5.13",
-    "@types/react-helmet": "^6.1.5",
     "classnames": "^2.3.2",
     "gatsby": "^5.0.1",
     "gatsby-plugin-image": "^3.0.0",
     "gatsby-plugin-manifest": "^5.0.0",
-    "gatsby-plugin-react-helmet": "^6.0.0",
     "gatsby-plugin-sass": "^6.0.0",
     "gatsby-plugin-sharp": "^5.0.0",
     "gatsby-plugin-sitemap": "^6.0.0",
@@ -33,7 +31,6 @@
     "gatsby-transformer-sharp": "^5.0.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "react-helmet": "^6.1.0",
     "sass": "^1.56.0"
   },
   "devDependencies": {

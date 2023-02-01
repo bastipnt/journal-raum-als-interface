@@ -2,10 +2,11 @@
 slug: "2022-11-16-dokumentation"
 date: "2022-11-16"
 title: "Dokumentation"
+week: "Woche 1"
 location: "DC Studio"
+image: ./images/before.png
+description: Erste Veranstaltung - TBD
 tags: "project1, studio, documentation"
-created: 2022-11-25T16:29:12+01:00
-updated: 2022-12-07T17:10:13+01:00
 ---
 
 ### Problemstellung:
